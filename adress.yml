@@ -1,0 +1,19 @@
+Address:
+  type: object
+  properties:
+    addressLine:
+      type: string
+    city:
+      type: string
+    state:
+      type: string
+      enum:
+        - California
+        - Texas
+        - Indiana
+        - NewYork
+    zipcode:
+      type: string
+    isOfficeAddress:
+      type: boolean
+  required: [addressLine, city, state, zipcode]
